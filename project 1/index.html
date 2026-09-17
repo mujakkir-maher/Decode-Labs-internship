@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maher Vai Coffee — Neighborhood Roastery</title>
+    <meta name="description" content="Maher Vai Coffee is a small-batch coffee roastery and cafe. See our menu, hours, and location.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="site-header__name">Maher Vai Coffee</p>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#visit">Visit</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="top">
+            <div class="hero__text">
+                <p class="hero__eyebrow">Small-batch roastery &amp; cafe</p>
+                <h1 class="hero__title">Coffee roasted a few streets from where you'll drink it.</h1>
+                <p class="hero__lede">
+                    We roast in small batches every week and pull espresso the same day the beans are ground.
+                    Come sit with a cup, or take a bag home.
+                </p>
+                <a class="hero__cta" href="#menu">See the menu</a>
+            </div>
+            <img class="hero__image" src="assets/hero-coffee.svg" alt="Illustration of a steaming cup of coffee" width="360" height="360">
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Our story</h2>
+            <div class="about__grid">
+                <p class="about__bio">
+                    Maher Vai started in 2019 as a single roaster in a rented garage. Today we still roast
+                    everything ourselves, in batches small enough that we taste-test each one before it goes
+                    on the menu. No two weeks taste quite the same — that's the point.
+                </p>
+                <dl class="about__facts">
+                    <div>
+                        <dt>Founded</dt>
+                        <dd>2019</dd>
+                    </div>
+                    <div>
+                        <dt>Roasts weekly</dt>
+                        <dd>3–4 batches</dd>
+                    </div>
+                    <div>
+                        <dt>Beans sourced from</dt>
+                        <dd>Ethiopia, Colombia, Sumatra</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="menu" id="menu" aria-labelledby="menu-title">
+            <h2 id="menu-title">Menu highlights</h2>
+            <div class="menu__groups">
+
+                <div class="menu__group">
+                    <h3>Coffee</h3>
+                    <ul class="menu__list">
+                        <li><span>Pour Over</span><span class="menu__price">$4.50</span></li>
+                        <li><span>Espresso</span><span class="menu__price">$3.00</span></li>
+                        <li><span>Cortado</span><span class="menu__price">$4.00</span></li>
+                        <li><span>Cold Brew</span><span class="menu__price">$4.75</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu__group">
+                    <h3>Pastries</h3>
+                    <ul class="menu__list">
+                        <li><span>Butter Croissant</span><span class="menu__price">$3.50</span></li>
+                        <li><span>Banana Bread</span><span class="menu__price">$4.00</span></li>
+                        <li><span>Cardamom Bun</span><span class="menu__price">$3.75</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu__group">
+                    <h3>Beans to go</h3>
+                    <ul class="menu__list">
+                        <li><span>House Blend, 250g</span><span class="menu__price">$9.00</span></li>
+                        <li><span>Single Origin, 250g</span><span class="menu__price">$12.00</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">A look inside</h2>
+            <div class="gallery__grid">
+                <img src="assets/gallery-interior.svg" alt="Illustration of the cafe's seating corner" width="400" height="300">
+                <img src="assets/gallery-beans.svg" alt="Illustration of roasted coffee beans" width="400" height="300">
+                <img src="assets/gallery-pastry.svg" alt="Illustration of a pastry on a plate" width="400" height="300">
+            </div>
+        </section>
+
+        <section class="visit" id="visit" aria-labelledby="visit-title">
+            <h2 id="visit-title">Visit us</h2>
+            <div class="visit__grid">
+                <div>
+                    <h3>Hours</h3>
+                    <ul class="visit__hours">
+                        <li><span>Mon–Fri</span><span>7:00 AM – 6:00 PM</span></li>
+                        <li><span>Sat–Sun</span><span>8:00 AM – 5:00 PM</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Location</h3>
+                    <address>
+                        42 Riverside Lane<br>
+                        Sylhet 1212, Bangladesh
+                    </address>
+                    <p><a href="mailto:hello@mahervaicoffee.example">hello@mahervaicoffee.example</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Maher Vai Coffee. Built for DecodeLabs Industrial Training, Project 1.</p>
+    </footer>
+
+</body>
+</html>
