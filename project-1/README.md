@@ -2,6 +2,10 @@
 
 A static, single-page website for a small-batch coffee roastery and cafe. Built as **Project 1** for the DecodeLabs Frontend Development Industrial Training track.
 
+### Live Demo
+
+🔗 [Project 1 — Maher Vai Coffee](https://mujakkir-maher.github.io/Decode-Labs-internship/project-1/)
+
 ## Purpose
 
 The goal of this project is to practice writing clean, semantic HTML and organized, responsive CSS — no JavaScript, no frameworks. The page introduces the business, shows its menu, a small photo gallery, and visiting information (hours and location).
