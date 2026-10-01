@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive task dashboard built with HTML, CSS, and JavaScript.">
+    <title>FocusFlow || Interactive Task Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <!-- Website name -->
+            <a href="#" class="brand">
+                Focus <span>Flow</span>
+            </a>
+
+            <!-- Dark mode button -->
+            <button
+                class="theme-toggle js-theme-toggle"
+                type="button"
+                aria-label="Toggle dark mode"
+            >
+                <i class="theme-icon" aria-hidden="true">☾</i>
+                <span class="theme-label">Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">INTERACTIVE WEB ELEMENTS</p>
+
+                <h1>
+                    Turn your tasks into <span>progress.</span>
+                </h1>
+
+                <p class="hero-text">
+                    A simple interactive dashboard built with DOM manipulation,
+                    events, state and dynamic content updates.
+                </p>
+            </div>
+        </section>
+
+        <section class="dashboard">
+            <div class="container">
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <span class="stat-label">Total Tasks</span>
+                        <strong class="js-total-count">0</strong>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-label">Completed</span>
+                        <strong class="js-completed-count">0</strong>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-label">Remaining</span>
+                        <strong class="js-remaining-count">0</strong>
+                    </article>
+                </div>
+
+                <!-- TASK PANEL -->
+                <section class="task-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="section-kicker">MY TASKS</p>
+                            <h2>Today's Focus</h2>
+                        </div>
+
+                        <button
+                            class="clear-button js-clear-completed"
+                            type="button"
+                        >
+                            Clear completed
+                        </button>
+                    </div>
+
+                    <!-- Add-task form -->
+                    <form class="task-form js-task-form">
+                        <label class="sr-only" for="task-input">
+                            New task
+                        </label>
+
+                        <input
+                            id="task-input"
+                            class="task-input js-task-input"
+                            type="text"
+                            placeholder="What do you need to do?"
+                            maxlength="80"
+                            autocomplete="off"
+                            required
+                        >
+
+                        <button class="add-button" type="submit">
+                            Add Task
+                        </button>
+                    </form>
+
+                    <!-- FILTER BUTTONS -->
+                    <div class="filter-row" aria-label="Task filters">
+                        <button
+                            class="filter-button is-active js-filter"
+                            data-filter="all"
+                            type="button"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-button js-filter"
+                            data-filter="active"
+                            type="button"
+                        >
+                            Active
+                        </button>
+
+                        <button
+                            class="filter-button js-filter"
+                            data-filter="completed"
+                            type="button"
+                        >
+                            Completed
+                        </button>
+                    </div>
+
+                    <!-- Status message -->
+                    <p
+                        class="task-message js-task-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                    <!-- Task list -->
+                    <ul class="task-list js-task-list"></ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>Built with HTML, CSS &amp; Vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
