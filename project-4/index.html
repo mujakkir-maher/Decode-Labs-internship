@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive registration form demonstrating accessible client-side validation.">
+  <title>Create your account — FormLab</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/validation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <main class="layout">
+    <aside class="intro" aria-labelledby="intro-title">
+      <a class="brand" href="#" aria-label="FormLab home"><span class="brand-icon" aria-hidden="true">F</span> FormLab</a>
+      <div class="intro-content">
+        <p class="eyebrow">FORM DESIGN &amp; VALIDATION</p>
+        <h1 id="intro-title">Better forms.<br>Clearer experiences.</h1>
+        <p class="intro-copy">A thoughtful form helps people understand what is needed, correct mistakes, and move forward with confidence.</p>
+        <ul class="benefits">
+          <li><span aria-hidden="true">✓</span> Clear, field-specific feedback</li>
+          <li><span aria-hidden="true">✓</span> Accessible interactions</li>
+          <li><span aria-hidden="true">✓</span> Helpful validation before submit</li>
+        </ul>
+      </div>
+      <p class="aside-note">A frontend learning project · HTML, CSS &amp; JavaScript</p>
+    </aside>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="form-wrap">
+        <header class="form-heading">
+          <p class="eyebrow">GET STARTED</p>
+          <h2 id="form-title">Create your account</h2>
+          <p>Complete the fields below. <span class="required">*</span> Required</p>
+        </header>
+
+        <div id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+
+        <form id="registration-form" novalidate>
+          <div class="field">
+            <label for="full-name">Full name <span class="required">*</span></label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Alex Morgan" required minlength="2" maxlength="80" aria-describedby="full-name-hint full-name-error">
+            <p class="hint" id="full-name-hint">Enter at least 2 characters.</p>
+            <p class="error" id="full-name-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address <span class="required">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required maxlength="254" aria-describedby="email-hint email-error">
+            <p class="hint" id="email-hint">Use an address in a standard email format.</p>
+            <p class="error" id="email-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="password">Password <span class="required">*</span></label>
+            <div class="password-wrap">
+              <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a strong password" required aria-describedby="password-hint password-strength password-error">
+              <button class="show-password" type="button" id="toggle-password" aria-controls="password" aria-pressed="false">Show</button>
+            </div>
+            <p class="hint" id="password-hint">8+ characters, with uppercase, lowercase, a number and a symbol.</p>
+            <div class="strength-row">
+              <div class="strength-track" aria-hidden="true"><span id="strength-bar"></span></div>
+              <span id="password-strength">Not entered</span>
+            </div>
+            <p class="error" id="password-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">Confirm password <span class="required">*</span></label>
+            <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Enter your password again" required aria-describedby="confirm-password-error">
+            <p class="error" id="confirm-password-error" hidden></p>
+          </div>
+
+          <div class="terms-field">
+            <input id="terms" name="terms" type="checkbox" required aria-describedby="terms-error">
+            <label for="terms">I agree to the terms of use. <span class="required">*</span></label>
+            <p class="error" id="terms-error" hidden></p>
+          </div>
+
+          <button class="submit-button" type="submit"><span>Create account</span><span aria-hidden="true">→</span></button>
+          <p class="form-note">Demo only. Your information is checked in this browser and is not sent to a server.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
